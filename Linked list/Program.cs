@@ -9,9 +9,9 @@ namespace LinkedListProblems
         {
             LinkedList list= new LinkedList();
             Console.WriteLine("Adding Values in LinkedList");
-            list.Addnote(70);
-            list.Addnote(30);
             list.Addnote(56);
+            list.Addnote(30);
+            list.Addnote(70);
             list.Display();
         }
     }

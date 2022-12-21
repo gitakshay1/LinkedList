@@ -42,7 +42,7 @@ namespace Linked_list
                 Node tempnode = head;
                 while (tempnode != null)
                 {
-                    Console.WriteLine("| " + tempnode.data + " |");
+                    Console.WriteLine( tempnode.data  );
                     tempnode = tempnode.Next;
                 }
                 Console.WriteLine("\n");
