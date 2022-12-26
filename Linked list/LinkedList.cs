@@ -86,8 +86,26 @@ namespace Linked_list
         }
         public void deleteFirst ()
         {
-            Node temp = head;
-            head = temp.Next;
+            Node node = head;
+            if (head!= null)
+            {
+                node = head;
+                head = head.Next;
+                node = null;
+            }
+            
+        }
+        public void deleteLast ()
+        {
+            Node node = head;
+            Node lastnode= node.Next;
+            if(head!=null)
+            {
+                node = node.Next;
+                node.Next = null;
+                lastnode = null;
+
+            }
         }
     }
 }
