@@ -60,6 +60,7 @@ namespace Linked_list
                 Node temp = head;
                 head = node;
                 head.Next = temp;
+
             }
         }
     }
