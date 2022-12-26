@@ -63,5 +63,26 @@ namespace Linked_list
 
             }
         }
+        public void insert (int Position,int data)
+        {
+           Node node=new Node(data);
+            if(Position == 1)
+            {
+                node.Next= head;
+                head= node;
+            }
+            else
+            {
+                Node temp = head;
+                while(Position>2)
+                {
+                    temp=temp.Next;
+                    Position--;
+                }
+                node.Next= temp.Next;
+                temp.Next = node;
+            }
+
+        }
     }
 }
