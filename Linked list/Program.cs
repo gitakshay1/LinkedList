@@ -20,6 +20,8 @@ namespace LinkedListProblems
             list.Display();
             list.insert(2, 30);
             list.Display();
+            list.deleteFirst();
+            list.Display();
         }
     }
 }
